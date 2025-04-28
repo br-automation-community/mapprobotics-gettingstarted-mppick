@@ -35,3 +35,23 @@ The prepared project includes:
 - Virtual axes for the two conveyor belts
 
 This eliminates the need to add drive modules, simplifying the setup process.
+
+### Running the application
+
+
+The program can be tested using the Watch window and diagnostics functions.
+
+The interface of the mapp function block in the Watch window can be used to enable commands such as switching on (Power) and homing (Home) as well as the movement (MoveXxx) or program (MoveProgram).
+
+Additional functionalities are available in section Diagnostic functions.
+
+
+If the ZIP file for this "Getting started" tutorial was imported, predefined global variables are already available to simplify commissioning.
+
+The command starts the motion sequence of the pick-and-place system, and the ReadyXxx variables provide information about which program is working and has been prepared.
+If an error occurs, the state of variable Ready changes from TRUE to FALSE.
+For additional information, see the respective program on the function block outputs.
+
+Tip: Changing the speed of the conveyor belts (PickConveyor) best shows how the PickCore solution works.
+
+![image](https://github.com/user-attachments/assets/18624cdf-c7f3-4b00-b2c4-23d2cc294c08)
