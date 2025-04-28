@@ -6,6 +6,9 @@ This project provides an easy Getting Started for testing a pick-and-place appli
 
 The task involves automatically picking up chaotically arranged objects from one location (e.g., a moving conveyor belt) and placing them in an orderly manner at another location (also a moving conveyor belt). The objects can vary by product type, and the requirements may include sorting by properties such as color, weight, or other characteristics.
 
+![image](https://github.com/user-attachments/assets/63105026-6842-4580-b3fe-3504cc6079cb)
+
+
 ### Application Options
 
 The pick-and-place application can be used for:
