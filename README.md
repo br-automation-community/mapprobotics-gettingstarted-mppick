@@ -25,7 +25,7 @@ The pick-and-place application can be used for:
 - Required licenses must be available depending on hardware and software components used (see Licensing).
 - For real hardware, the transfer method must be taken into account according to the download behavior of the mapp Technology concept.
 
-### Getting Started
+### Getting Started special implementation
 
 For the most efficient and straightforward implementation of the "Getting Started" tutorial for pick-and-place, a pre-configured project is provided. This project can be started directly from Automation Studio project and started with just a few additional steps.
 
@@ -36,8 +36,7 @@ The prepared project includes:
 
 This eliminates the need to add drive modules, simplifying the setup process.
 
-### Running the application
-
+### Running and testing the application
 
 The program can be tested using the Watch window and diagnostics functions.
 
@@ -45,13 +44,10 @@ The interface of the mapp function block in the Watch window can be used to enab
 
 Additional functionalities are available in section Diagnostic functions.
 
-
-If the ZIP file for this "Getting started" tutorial was imported, predefined global variables are already available to simplify commissioning.
-
 The command starts the motion sequence of the pick-and-place system, and the ReadyXxx variables provide information about which program is working and has been prepared.
 If an error occurs, the state of variable Ready changes from TRUE to FALSE.
 For additional information, see the respective program on the function block outputs.
 
-Tip: Changing the speed of the conveyor belts (PickConveyor) best shows how the PickCore solution works.
-
 ![image](https://github.com/user-attachments/assets/18624cdf-c7f3-4b00-b2c4-23d2cc294c08)
+
+Tip: Changing the speed of the conveyor belts (PickConveyor) best shows how the PickCore solution works.
