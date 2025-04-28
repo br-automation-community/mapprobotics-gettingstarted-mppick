@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpAxis 6.3.0 */
+/* MpAxis 6.2.0 */
 
 #ifndef _MPAXIS_
 #define _MPAXIS_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpAxis_VERSION
-#define _MpAxis_VERSION 6.3.0
+#define _MpAxis_VERSION 6.2.0
 #endif
 
 #include <bur/plctypes.h>
@@ -129,8 +129,7 @@ typedef enum MpAxisMoveCyclicVelocityModeEnum
 
 typedef enum MpAxisBasicConfigSectionEnum
 {	mcAXB_CFG_SEC_ALL,
-	mcAXB_CFG_SEC_DRIVE_CTRL,
-	mcAXB_CFG_SEC_MOVE_LIMITS
+	mcAXB_CFG_SEC_DRIVE_CTRL
 } MpAxisBasicConfigSectionEnum;
 
 typedef enum MpAxisBasicConfigCmdEnum
@@ -220,12 +219,6 @@ typedef enum MpAXBDrvCtrlFdbkModEnum
 	mcAXB_CTLR_FEED_TWO_MASS_MDL = 2,
 	mcAXB_CTLR_FEED_TWO_ENC_SPD = 3
 } MpAXBDrvCtrlFdbkModEnum;
-
-typedef enum MpAXBDrvCtrlVFreqCtrlTypEnum
-{	mcAXB_VF_TYP_LIN = 129,
-	mcAXB_VF_TYP_CONST_LD_TORQ = 131,
-	mcAXB_VF_TYP_QUAD = 130
-} MpAXBDrvCtrlVFreqCtrlTypEnum;
 
 typedef enum MpAXBDrvCtrlVFreqCtrlAutCfgEnum
 {	mcAXB_VF_AUTO_CFG_NOT_USE = 0,
@@ -500,7 +493,6 @@ typedef struct MpAxisStopAtPositionType
 {	plcbit Activate;
 	float Deceleration;
 	double Position;
-	float Acceleration;
 } MpAxisStopAtPositionType;
 
 typedef struct MpAxisStopType
@@ -921,8 +913,7 @@ typedef struct MpAXBDrvCtrlMdlType
 } MpAXBDrvCtrlMdlType;
 
 typedef struct MpAXBDrvCtrlVFreqCtrlType
-{	enum MpAXBDrvCtrlVFreqCtrlTypEnum Type;
-	enum MpAXBDrvCtrlVFreqCtrlAutCfgEnum AutomaticConfiguration;
+{	enum MpAXBDrvCtrlVFreqCtrlAutCfgEnum AutomaticConfiguration;
 	float SlipCompensation;
 	float TotalDelayTime;
 	float BoostVoltage;

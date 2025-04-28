@@ -7,9 +7,9 @@
   <Motion RestartAcoposParameter="true" RestartInitParameter="true" />
   <Variables DefaultInitValue="0" DefaultRetain="false" DefaultVolatile="true" />
   <TechnologyPackages>
-    <mappCockpit Version="6.3.0" />
-    <mappMotion McAcpSim="6.3.0" McDriveLog="6.3.0" McMechSys="6.3.0" Version="6.3.0" />
-    <mappView Version="6.3.0" />
+    <mappCockpit Version="6.2.1" />
+    <mappMotion McAcpSim="6.2.0" McDriveLog="6.2.0" McMechSys="6.2.0" Version="6.2.0" />
+    <mappView Version="6.2.0" />
     <OpcUaCs Version="6.0.0" />
   </TechnologyPackages>
 </Project>

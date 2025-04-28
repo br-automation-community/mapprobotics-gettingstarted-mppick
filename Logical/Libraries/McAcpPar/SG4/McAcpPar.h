@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* McAcpPar 6.3.0 */
+/* McAcpPar 6.2.0 */
 
 #ifndef _MCACPPAR_
 #define _MCACPPAR_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _McAcpPar_VERSION
-#define _McAcpPar_VERSION 6.3.0
+#define _McAcpPar_VERSION 6.2.0
 #endif
 
 #include <bur/plctypes.h>
@@ -631,7 +631,6 @@ extern "C"
  #define mcACPPAR_LOGIC_IN2_PARID 3088U
  #define mcACPPAR_LOGIC_IN1_PARID 3080U
  #define mcACPPAR_LOGIC_MODE 3072U
- #define mcACPPAR_ENCOD2_TEMP_EXT 1770U
  #define mcACPPAR_ENCOD2_DATA_UI4_VAR4 1769U
  #define mcACPPAR_ENCOD2_DATA_UI4_VAR3 1768U
  #define mcACPPAR_ENCOD2_DATA_UI4_VAR2 1767U
@@ -798,7 +797,6 @@ extern "C"
  #define mcACPPAR_DCREL_TEMP 1540U
  #define mcACPPAR_RECT_TEMP 1539U
  #define mcACPPAR_TEMP_MODUL5 1538U
- #define mcACPPAR_ENCOD_TEMP_EXT 1536U
  #define mcACPPAR_ENCOD3_MAX_SYNC_SPEED 1533U
  #define mcACPPAR_ENCOD2_MAX_SYNC_SPEED 1532U
  #define mcACPPAR_ENCOD3_DIAG3 1531U
@@ -2596,7 +2594,6 @@ extern "C"
  _GLOBAL_CONST unsigned short mcACPPAR_LOGIC_IN2_PARID;
  _GLOBAL_CONST unsigned short mcACPPAR_LOGIC_IN1_PARID;
  _GLOBAL_CONST unsigned short mcACPPAR_LOGIC_MODE;
- _GLOBAL_CONST unsigned short mcACPPAR_ENCOD2_TEMP_EXT;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD2_DATA_UI4_VAR4;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD2_DATA_UI4_VAR3;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD2_DATA_UI4_VAR2;
@@ -2763,7 +2760,6 @@ extern "C"
  _GLOBAL_CONST unsigned short mcACPPAR_DCREL_TEMP;
  _GLOBAL_CONST unsigned short mcACPPAR_RECT_TEMP;
  _GLOBAL_CONST unsigned short mcACPPAR_TEMP_MODUL5;
- _GLOBAL_CONST unsigned short mcACPPAR_ENCOD_TEMP_EXT;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD3_MAX_SYNC_SPEED;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD2_MAX_SYNC_SPEED;
  _GLOBAL_CONST unsigned short mcACPPAR_ENCOD3_DIAG3;

@@ -133,19 +133,12 @@ TYPE
 		Mass1 : MpAXBDrvCtrlMdlMass1Type; (*Mass 1 parameters*)
 		Mass2 : MpAXBDrvCtrlMdlMass2Type; (*Mass 2 parameters*)
 	END_STRUCT;
-	MpAXBDrvCtrlVFreqCtrlTypEnum :
-		( (*Type of characteristic curve*)
-		mcAXB_VF_TYP_LIN := 129, (*Linear - Linear characteristic curve*)
-		mcAXB_VF_TYP_CONST_LD_TORQ := 131, (*Constant load torque - Characteristic curve for quadratic load curves*)
-		mcAXB_VF_TYP_QUAD := 130 (*Quadratic - Characteristic curve for quadratic load curves*)
-		);
 	MpAXBDrvCtrlVFreqCtrlAutCfgEnum :
 		( (*Automatic configuration of parameters*)
 		mcAXB_VF_AUTO_CFG_NOT_USE := 0, (*Not used*)
 		mcAXB_VF_AUTO_CFG_MOT_PAR_BASED := 1 (*Motor parameter based*)
 		);
 	MpAXBDrvCtrlVFreqCtrlType : STRUCT (*V/f control parameters*)
-		Type : MpAXBDrvCtrlVFreqCtrlTypEnum; (*Type of characteristic curve*)
 		AutomaticConfiguration : MpAXBDrvCtrlVFreqCtrlAutCfgEnum; (*Automatic configuration of parameters*)
 		SlipCompensation : REAL; (*Slip compensation: Multiplication factor of compensated frequency*)
 		TotalDelayTime : REAL; (*Total delay time [s]*)
