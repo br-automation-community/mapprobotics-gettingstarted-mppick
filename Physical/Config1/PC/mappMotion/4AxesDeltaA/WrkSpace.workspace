@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Workspace_1" Type="workspace">
+    <Group ID="WorkSpace">
+      <Group ID="Cuboids">
+        <Group ID="Cuboid[1]">
+          <Property ID="ID" Value="1" />
+          <Group ID="Translation">
+            <Property ID="X" Value="-700" />
+            <Property ID="Y" Value="-700" />
+            <Property ID="Z" Value="-200" />
+          </Group>
+          <Group ID="Dimension">
+            <Property ID="X" Value="1400" />
+            <Property ID="Y" Value="1400" />
+            <Property ID="Z" Value="1500" />
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+    <Group ID="SafeSpace">
+      <Group ID="Cuboids">
+        <Group ID="Cuboid[1]">
+          <Property ID="ID" Value="2" />
+          <Group ID="Translation">
+            <Property ID="X" Value="-300" />
+            <Property ID="Y" Value="-300" />
+            <Property ID="Z" Value="-200" />
+          </Group>
+          <Group ID="Dimension">
+            <Property ID="X" Value="600" />
+            <Property ID="Y" Value="600" />
+            <Property ID="Z" Value="100" />
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>
