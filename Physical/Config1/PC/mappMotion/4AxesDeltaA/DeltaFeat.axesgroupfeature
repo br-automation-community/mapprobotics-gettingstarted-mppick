@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Feature_Programs" Type="axesgroupfeature" />
+  <Element ID="Feature_Jogging" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Jogging" />
+  </Element>
+  <Element ID="Feature_WS" Type="axesgroupfeature">
+    <Selector ID="Type" Value="WorkspaceMonitoring">
+      <Property ID="WorkspaceRef" Value="Workspace_1" />
+    </Selector>
+  </Element>
+  <Element ID="Feature_FeedForward" Type="axesgroupfeature">
+    <Selector ID="Type" Value="FeedForward">
+      <Property ID="RiseTime" Value="0.25" />
+      <Selector ID="Filter" Value="AxisJerkTime" />
+    </Selector>
+  </Element>
+</Configuration>

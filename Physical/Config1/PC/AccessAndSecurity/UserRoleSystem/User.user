@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="User" Type="User">
+    <Property ID="Password" Value="$argon2id$v=19$m=512,t=70,p=1$wxo0Hn3GfUQZ$ujp7YLQuEeD0WQV5xp/49Ecd/YsFy89BvM738k6l2+0" Description="MpPick" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="BR_Engineer" />
+    </Group>
+  </Element>
+</Configuration>

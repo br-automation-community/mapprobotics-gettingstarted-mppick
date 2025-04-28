@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAxis_1" Type="axis">
+    <Selector ID="BaseType" Value="LinearPeriodic">
+      <Group ID="PeriodSettings">
+        <Property ID="Period" Value="2000" />
+      </Group>
+    </Selector>
+    <Selector ID="MovementLimits">
+      <Selector ID="Velocity">
+        <Property ID="Velocity" Value="200" />
+      </Selector>
+      <Selector ID="Acceleration">
+        <Property ID="Acceleration" Value="50" />
+      </Selector>
+      <Selector ID="Deceleration">
+        <Property ID="Deceleration" Value="50" />
+      </Selector>
+    </Selector>
+  </Element>
+  <Element ID="gAxis_2" Type="axis">
+    <Selector ID="BaseType" Value="LinearPeriodic">
+      <Group ID="PeriodSettings">
+        <Property ID="Period" Value="2000" />
+      </Group>
+    </Selector>
+    <Selector ID="MovementLimits">
+      <Selector ID="Velocity">
+        <Property ID="Velocity" Value="200" />
+      </Selector>
+      <Selector ID="Acceleration">
+        <Property ID="Acceleration" Value="50" />
+      </Selector>
+      <Selector ID="Deceleration">
+        <Property ID="Deceleration" Value="50" />
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gPickRegister" Type="pickregister">
+    <Selector ID="Type" Value="LinearConveyor">
+      <Property ID="StandardFrameName" Value="ConveyorPick" />
+      <Property ID="Length" Value="2000" />
+      <Property ID="Width" Value="250" />
+      <Property ID="MaxPositionError" Value="5.0" />
+      <Selector ID="MotionSource" Value="Axis">
+        <Property ID="AxisRef" Value="gAxis_1" />
+        <Selector ID="MovementLimits">
+          <Selector ID="Direction" Value="PositiveOnly" />
+        </Selector>
+      </Selector>
+    </Selector>
+    <Selector ID="SceneViewerObject">
+      <Selector ID="Content">
+        <Group ID="Template[1]">
+          <Selector ID="VisualRepresentation" Value="2DShape" />
+          <Group ID="Filter">
+            <Group ID="ObjectState">
+              <Property ID="State[1]" Value="1" />
+            </Group>
+          </Group>
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+  <Element ID="gPlaceRegister" Type="pickregister">
+    <Selector ID="Type" Value="LinearConveyor">
+      <Property ID="StandardFrameName" Value="ConveyorPlace" />
+      <Property ID="Length" Value="2000" />
+      <Property ID="Width" Value="250" />
+      <Property ID="MaxPositionError" Value="5.0" />
+      <Selector ID="MotionSource" Value="Axis">
+        <Property ID="AxisRef" Value="gAxis_2" />
+        <Selector ID="MovementLimits">
+          <Selector ID="Direction" Value="PositiveOnly" />
+        </Selector>
+      </Selector>
+    </Selector>
+    <Selector ID="SceneViewerObject">
+      <Selector ID="Content">
+        <Group ID="Template[1]">
+          <Selector ID="VisualRepresentation" Value="2DShape" />
+          <Group ID="Filter">
+            <Group ID="ObjectState">
+              <Property ID="State[1]" Value="1" />
+            </Group>
+          </Group>
+        </Group>
+        <Group ID="Template[2]">
+          <Selector ID="VisualRepresentation" Value="2DShape">
+            <Selector ID="ShapeType">
+              <Selector ID="ShapeStyle" Value="Border" />
+              <Property ID="Material" Value="WhiteMatte" />
+            </Selector>
+          </Selector>
+          <Group ID="Filter">
+            <Group ID="ObjectState">
+              <Property ID="State[1]" Value="2" />
+            </Group>
+          </Group>
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>
