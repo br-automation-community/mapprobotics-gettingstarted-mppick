@@ -589,7 +589,7 @@ TYPE
 		Material : McScnSurfaceEnum; (*Material*)
 	END_STRUCT;
 	MpPRSVCont3DTypCylinderDimType : STRUCT (*Dimensions of the object*)
-		Radius : LREAL; (*Length [measurement units]*)
+		Radius : LREAL; (*Radius [measurement units]*)
 		Height : LREAL; (*Height [measurement units]*)
 	END_STRUCT;
 	MpPRSVCont3DTypCylinderStyleEnum :
