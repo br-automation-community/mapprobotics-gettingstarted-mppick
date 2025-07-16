@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Feature_Programs_D4r1100R_1" Type="axesgroupfeature">
+    <Selector ID="Type">
+      <Group ID="InitialSettings">
+        <Selector ID="AccuracyHoldDelays" Value="User defined">
+          <Property ID="UserAxesDelay" Value="0.03" />
+        </Selector>
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_Jogging_D4r1100R_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Jogging" />
+  </Element>
+  <Element ID="Feature_FeedForward_D4r1100R_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="FeedForward">
+      <Property ID="RiseTime" Value="0.25" />
+      <Selector ID="Filter" Value="AxisJerkTime" />
+    </Selector>
+  </Element>
+  <Element ID="Feature_WorkspaceMon_D4r1100R_1" Type="axesgroupfeature">
+    <Selector ID="Type" Value="WorkspaceMonitoring">
+      <Property ID="WorkspaceRef" Value="Workspace_1" />
+    </Selector>
+  </Element>
+</Configuration>
