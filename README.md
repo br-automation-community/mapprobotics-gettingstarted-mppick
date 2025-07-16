@@ -34,10 +34,10 @@ For the most efficient and straightforward implementation of the "Getting Starte
 
 The prepared project includes:
 
-- Virtual axes for the delta robot
-- Virtual axes for the two conveyor belts
-
-This eliminates the need to add drive modules, simplifying the setup process.
+- Imported standard Codian D4-ST21-1100-R11 template
+- Additional ACOPOS P3 for axes driving the two conveyor belts
+- Example of the Workspace feature
+- Example of the Productload feature used in the ObjectList to define weight of the pick objects
 
 ### Running and testing the application
 

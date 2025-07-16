@@ -133,12 +133,19 @@ TYPE
 		Mass1 : MpAXBDrvCtrlMdlMass1Type; (*Mass 1 parameters*)
 		Mass2 : MpAXBDrvCtrlMdlMass2Type; (*Mass 2 parameters*)
 	END_STRUCT;
+	MpAXBDrvCtrlVFreqCtrlTypEnum :
+		( (*Type of characteristic curve*)
+		mcAXB_VF_TYP_LIN := 129, (*Linear - Linear characteristic curve*)
+		mcAXB_VF_TYP_CONST_LD_TORQ := 131, (*Constant load torque - Characteristic curve for quadratic load curves*)
+		mcAXB_VF_TYP_QUAD := 130 (*Quadratic - Characteristic curve for quadratic load curves*)
+		);
 	MpAXBDrvCtrlVFreqCtrlAutCfgEnum :
 		( (*Automatic configuration of parameters*)
 		mcAXB_VF_AUTO_CFG_NOT_USE := 0, (*Not used*)
 		mcAXB_VF_AUTO_CFG_MOT_PAR_BASED := 1 (*Motor parameter based*)
 		);
 	MpAXBDrvCtrlVFreqCtrlType : STRUCT (*V/f control parameters*)
+		Type : MpAXBDrvCtrlVFreqCtrlTypEnum; (*Type of characteristic curve*)
 		AutomaticConfiguration : MpAXBDrvCtrlVFreqCtrlAutCfgEnum; (*Automatic configuration of parameters*)
 		SlipCompensation : REAL; (*Slip compensation: Multiplication factor of compensated frequency*)
 		TotalDelayTime : REAL; (*Total delay time [s]*)
@@ -608,8 +615,23 @@ TYPE
 		DigitalInputs : MpAXBDrvDigInType; (*Various digital input functionalities e.g. like homing switch or triggers*)
 		EncoderLink : MpAXBDrvEncLinkType; (*Encoder Link*)
 	END_STRUCT;
+	MpAXBFeatRefType : STRUCT (*Feature references*)
+		ConfigType : McCfgTypeEnum; (*Feature type*)
+		Name : STRING[250]; (*Reference name*)
+	END_STRUCT;
+	MpAXBFeatAxFeatType : STRUCT (*Axis feature references*)
+		Reference : ARRAY[0..9] OF MpAXBFeatRefType; (*Feature references*)
+	END_STRUCT;
+	MpAXBFeatChFeatType : STRUCT (*Channel feature references, only for AcpAx. For all axes sharing the channel features (Real axis and virtual axis) settings should be the same otherwise it will override the other axis settings*)
+		Reference : ARRAY[0..9] OF MpAXBFeatRefType; (*Feature references*)
+	END_STRUCT;
+	MpAXBFeatType : STRUCT (*Used feature configuration*)
+		AxisFeatures : MpAXBFeatAxFeatType; (*Axis feature references*)
+		ChannelFeatures : MpAXBFeatChFeatType; (*Channel feature references, only for AcpAx. For all axes sharing the channel features (Real axis and virtual axis) settings should be the same otherwise it will override the other axis settings*)
+	END_STRUCT;
 	MpAxisBasicConfigType : STRUCT (*General purpose datatype*)
 		Axis : MpAXBAxType; (*Axis configuration*)
 		Drive : MpAXBDrvType; (*Drive configuration*)
+		Features : MpAXBFeatType; (*Used feature configuration*)
 	END_STRUCT;
 END_TYPE

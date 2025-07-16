@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
   <Element ID="gPickCore_1" Type="pickcore">
-    <Property ID="AxesGroupRef" Value="g4AxDeltaA" />
+    <Property ID="AxesGroupRef" Value="gAxesGroup_D4r1100R_1" />
     <Selector ID="Gripper">
       <Selector ID="Behavior">
         <Property ID="ProcessVariableName" Value="::PrgPickCor:Gripper" />

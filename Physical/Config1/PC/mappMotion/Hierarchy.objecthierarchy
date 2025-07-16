@@ -24,7 +24,7 @@
       </Group>
       <Group ID="Object[3]">
         <Selector ID="Type">
-          <Property ID="AxesGroupRef" Value="g4AxDeltaA" />
+          <Property ID="AxesGroupRef" Value="gAxesGroup_D4r1100R_1" />
           <Group ID="Translation">
             <Property ID="X" Value="1000.0" />
           </Group>

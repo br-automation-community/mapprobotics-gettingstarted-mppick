@@ -2,11 +2,95 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="04/28/2025 07:56:29" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="07/16/2025 15:44:07" />
   </TimeStamps>
   <Modules>
     <Module Name="PC" Type="PC_any" X="100" Y="100" />
+    <Module Name="5LS182.6-1" Type="5LS182.6-1" X="418" Y="110" />
+    <Module Name="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" Type="8EI8X8HWT10.xxxx-1" X="463" Y="399" />
+    <Module Name="8LSA44.DB060S200-3_Q1_D4r1100R_1" Type="MotorSynchronous_any" X="463" Y="710.8" />
+    <Module Name="8LSA44.DB060S200-3_Q2_D4r1100R_1" Type="MotorSynchronous_any" X="463" Y="878.399963" />
+    <Module Name="8LSA44.DB060S200-3_Q3_D4r1100R_1" Type="MotorSynchronous_any" X="463" Y="1046" />
+    <Module Name="8EI2X2HWS10.xxxx-1-QC_D4r1100R_1" Type="8EI2X2HWS10.xxxx-1" X="559.2" Y="399" />
+    <Module Name="8LSAA2.D9045S200-3_QC_D4r1100R_1" Type="MotorSynchronous_any" X="559.2" Y="652" />
+    <Module Name="8EI8X8HWT10.xxxx-1" Type="8EI8X8HWT10.xxxx-1" X="655.4" Y="399" />
   </Modules>
-  <Links />
+  <Links>
+    <Link From="5LS182.6-1" To="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="459" Y="118" />
+      <Point X="459" Y="118" />
+      <Point X="464" Y="118" />
+      <Point X="470.7" Y="118" />
+      <Point X="470.7" Y="398.5" />
+      <Point X="470.7" Y="409.5" />
+      <Point X="470.7" Y="409.5" />
+    </Link>
+    <Link From="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" To="8LSA44.DB060S200-3_Q1_D4r1100R_1" FromPort="MT1" ToPort="MT" IsRoutedByUser="False">
+      <Point X="489.599976" Y="545.3" />
+      <Point X="489.599976" Y="545.3" />
+      <Point X="509.599976" Y="545.3" />
+      <Point X="522" Y="545.3" />
+      <Point X="522" Y="675" />
+      <Point X="492.2" Y="675" />
+      <Point X="492.2" Y="710.5" />
+      <Point X="492.2" Y="715.5" />
+      <Point X="492.2" Y="715.5" />
+    </Link>
+    <Link From="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" To="8LSA44.DB060S200-3_Q2_D4r1100R_1" FromPort="MT2" ToPort="MT" IsRoutedByUser="False">
+      <Point X="489.599976" Y="496.3" />
+      <Point X="489.599976" Y="496.3" />
+      <Point X="509.599976" Y="496.3" />
+      <Point X="529" Y="496.3" />
+      <Point X="529" Y="835" />
+      <Point X="492.2" Y="835" />
+      <Point X="492.2" Y="878.1" />
+      <Point X="492.2" Y="883.1" />
+      <Point X="492.2" Y="883.1" />
+    </Link>
+    <Link From="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" To="8LSA44.DB060S200-3_Q3_D4r1100R_1" FromPort="MT3" ToPort="MT" IsRoutedByUser="False">
+      <Point X="489.599976" Y="447.3" />
+      <Point X="489.599976" Y="447.3" />
+      <Point X="509.599976" Y="447.3" />
+      <Point X="515" Y="447.3" />
+      <Point X="515" Y="1005" />
+      <Point X="492.2" Y="1005" />
+      <Point X="492.2" Y="1045.7" />
+      <Point X="492.2" Y="1050.7" />
+      <Point X="492.2" Y="1050.7" />
+    </Link>
+    <Link From="8EI2X2HWS10.xxxx-1-QC_D4r1100R_1" To="8LSAA2.D9045S200-3_QC_D4r1100R_1" FromPort="MT1" ToPort="MT" IsRoutedByUser="False">
+      <Point X="585.8" Y="447.3" />
+      <Point X="585.8" Y="447.3" />
+      <Point X="605.8" Y="447.3" />
+      <Point X="615" Y="447.3" />
+      <Point X="615" Y="615" />
+      <Point X="588.399963" Y="615" />
+      <Point X="588.399963" Y="651.7" />
+      <Point X="588.399963" Y="656.7" />
+      <Point X="588.399963" Y="656.7" />
+    </Link>
+    <Link From="8EI8X8HWT10.xxxx-1-Q1-Q2-Q3_D4r1100R_1" To="8EI2X2HWS10.xxxx-1-QC_D4r1100R_1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="479.099976" Y="409.5" />
+      <Point X="479.099976" Y="409.5" />
+      <Point X="479.099976" Y="398.5" />
+      <Point X="479.099976" Y="385" />
+      <Point X="515" Y="385" />
+      <Point X="515" Y="409.5" />
+      <Point X="558.9001" Y="409.5" />
+      <Point X="566.9001" Y="409.5" />
+      <Point X="566.9001" Y="409.5" />
+    </Link>
+    <Link From="8EI2X2HWS10.xxxx-1-QC_D4r1100R_1" To="8EI8X8HWT10.xxxx-1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="575.3" Y="409.5" />
+      <Point X="575.3" Y="409.5" />
+      <Point X="575.3" Y="398.5" />
+      <Point X="575.3" Y="385" />
+      <Point X="615" Y="385" />
+      <Point X="615" Y="409.5" />
+      <Point X="655.1001" Y="409.5" />
+      <Point X="663.1001" Y="409.5" />
+      <Point X="663.1001" Y="409.5" />
+    </Link>
+  </Links>
   <InfoElements />
 </BR.AS.HardwareTopology>
