@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAxesGroup_D4r1100R_1" Type="axesgroup">
+  <Element ID="g4AxDeltaA" Type="axesgroup">
     <Selector ID="Type" Value="PathGenAxesGroup">
       <Property ID="ProcessingTaskClass" Value="1" />
       <Group ID="PhysicalAxes">
@@ -56,7 +56,6 @@
         <Property ID="FeatureRef[4]" Value="Feature_FrameHierarchy" />
         <Property ID="FeatureRef[5]" Value="Feature_Tracking" />
         <Property ID="FeatureRef[6]" Value="Feature_PathDefinition" />
-        <Property ID="FeatureRef[7]" Value="Feature_WorkspaceMon_D4r1100R_1" />
       </Group>
     </Selector>
   </Element>
