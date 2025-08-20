@@ -6,6 +6,9 @@
     <Selector ID="Type" Value="Delta">
       <Property ID="SubtypeIsReadOnly" Value="1" />
       <Selector ID="Subtype" Value="4AxesDeltaA">
+        <Selector ID="SceneViewerObject" Value="ObjectID">
+          <Property ID="ID" Value="1790" />
+        </Selector>
         <Property ID="DescriptionIsReadOnly" Value="1" />
         <Selector ID="Description">
           <Group ID="Dimensions">

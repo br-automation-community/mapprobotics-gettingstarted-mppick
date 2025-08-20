@@ -4,7 +4,7 @@ PROGRAM _INIT
     P_Step := P_WAIT_ENABLE;
     Error := FALSE;
 
-    PlaceHoldersSpacing := 120; // distance between two consecutive place holders
+    PlaceHoldersSpacing := 65.0; // distance between two consecutive place holders
     	 
 END_PROGRAM
 

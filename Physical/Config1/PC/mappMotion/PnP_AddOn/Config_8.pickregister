@@ -8,7 +8,7 @@
       <Property ID="Width" Value="250" />
       <Property ID="MaxPositionError" Value="5.0" />
       <Selector ID="MotionSource" Value="Axis">
-        <Property ID="AxisRef" Value="gAxis_1" />
+        <Property ID="AxisRef" Value="gAxis_Conveyor_1" />
         <Selector ID="MovementLimits">
           <Selector ID="Direction" Value="PositiveOnly" />
         </Selector>
@@ -34,7 +34,7 @@
       <Property ID="Width" Value="250" />
       <Property ID="MaxPositionError" Value="5.0" />
       <Selector ID="MotionSource" Value="Axis">
-        <Property ID="AxisRef" Value="gAxis_2" />
+        <Property ID="AxisRef" Value="gAxis_Conveyor_2" />
         <Selector ID="MovementLimits">
           <Selector ID="Direction" Value="PositiveOnly" />
         </Selector>
