@@ -4,7 +4,7 @@ PROGRAM _INIT
     C_Step := C_WAIT_ENABLE;
     Error := FALSE;
     
-    ProductSpacing := 120; // distance between two consecutive products
+    ProductSpacing := 65.0; // distance between two consecutive products
      
 END_PROGRAM
 

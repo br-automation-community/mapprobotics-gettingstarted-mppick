@@ -6,25 +6,9 @@
       <Property ID="FileDevice" Value="CNC_PrgDir" />
     </Group>
     <Group ID="GlobalCoordinateSystem">
-      <Group ID="Object[1]" Description="Pick the objects">
-        <Selector ID="Type" Value="StandardFrame">
-          <Property ID="Name" Value="ConveyorPick" />
-          <Group ID="Translation">
-            <Property ID="Y" Value="200.0" />
-          </Group>
-        </Selector>
-      </Group>
-      <Group ID="Object[2]" Description="Place the objects">
-        <Selector ID="Type" Value="StandardFrame">
-          <Property ID="Name" Value="ConveyorPlace" />
-          <Group ID="Translation">
-            <Property ID="Y" Value="-400.0" />
-          </Group>
-        </Selector>
-      </Group>
-      <Group ID="Object[3]">
+      <Group ID="Object[1]">
         <Selector ID="Type">
-          <Property ID="AxesGroupRef" Value="g4AxDeltaA" />
+          <Property ID="AxesGroupRef" Value="gAxesGroup_D4r1100R_1" />
           <Group ID="Translation">
             <Property ID="X" Value="1000.0" />
           </Group>
@@ -39,6 +23,22 @@
             </Group>
           </Selector>
         </Group>
+      </Group>
+      <Group ID="Object[2]" Description="Pick the objects">
+        <Selector ID="Type" Value="StandardFrame">
+          <Property ID="Name" Value="ConveyorPick" />
+          <Group ID="Translation">
+            <Property ID="Y" Value="200.0" />
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="Object[3]" Description="Place the objects">
+        <Selector ID="Type" Value="StandardFrame">
+          <Property ID="Name" Value="ConveyorPlace" />
+          <Group ID="Translation">
+            <Property ID="Y" Value="-400.0" />
+          </Group>
+        </Selector>
       </Group>
     </Group>
   </Element>

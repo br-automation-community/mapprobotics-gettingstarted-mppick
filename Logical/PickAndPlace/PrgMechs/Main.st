@@ -129,15 +129,15 @@ PROGRAM _CYCLIC
     ReadyToStart := ReadyMechanics AND ReadyPickReg AND ReadyPlaceReg AND ReadyPickCore;
     
     (* Call FBs *)
-    MpDelta4Axis_0.MpLink     := ADR(g4AxDeltaA);
+    MpDelta4Axis_0.MpLink     := ADR(gAxesGroup_D4r1100R_1);
     MpDelta4Axis_0.Parameters := ADR(DeltaParameters); 
     MpDelta4Axis_0();
     
-    MpAxisBasic_0.MpLink     := ADR(gAxis_1);
+    MpAxisBasic_0.MpLink     := ADR(gAxis_Conveyor_1);
     MpAxisBasic_0.Parameters := ADR(AxisParameters_0);
     MpAxisBasic_0();
     
-    MpAxisBasic_1.MpLink     := ADR(gAxis_2);
+    MpAxisBasic_1.MpLink     := ADR(gAxis_Conveyor_2);
     MpAxisBasic_1.Parameters := ADR(AxisParameters_1);
     MpAxisBasic_1();
     
