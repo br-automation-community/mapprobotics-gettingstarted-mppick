@@ -6,8 +6,7 @@ This project provides an easy Getting Started for testing a pick-and-place appli
 
 The task involves automatically picking up chaotically arranged objects from one location (e.g., a moving conveyor belt) and placing them in an orderly manner at another location (also a moving conveyor belt). The objects can vary by product type, and the requirements may include sorting by properties such as color, weight, or other characteristics.
 
-![image](https://github.com/user-attachments/assets/63105026-6842-4580-b3fe-3504cc6079cb)
-
+<img width="1304" height="938" alt="MpPick Scene" src="https://github.com/user-attachments/assets/e3c68013-4ba7-416c-ad8e-373bbf6bd18e" />
 
 ### Application Options
 
@@ -21,7 +20,7 @@ The pick-and-place application can be used for:
 
 ### Requirements
 
-- In simulation, Scene Viewer is recommended – the scene is either created automatically or obtained from GettingStartedHelper. The required connection login is **Username: User / Password: MpPick**
+- In simulation, Scene Viewer is recommended – the scene is either created automatically in the User partition or from projects Logical View. The required connection login is **Username: User / Password: MpPick**
 - The basics of coordinate systems are known.
 - The basics for a customized frame hierarchy are known.
 - "Getting started" tutorials are designed for simulation – describing adjustments to hardware or adapting to one's own hardware.
@@ -36,8 +35,6 @@ The prepared project includes:
 
 - Imported standard Codian D4-ST21-1100-R11 template
 - Additional ACOPOS P3 for axes driving the two conveyor belts
-- Example of the Workspace feature
-- Example of the Productload feature used in the ObjectList to define weight of the pick objects
 
 ### Running and testing the application
 
