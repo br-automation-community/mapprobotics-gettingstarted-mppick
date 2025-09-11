@@ -1,53 +1,19 @@
-# AS Help - Getting Started with MpPick
+# Getting Started - mapp Robotics MpPick Process Solution
 
-## Description
-
-This project provides an easy Getting Started for testing a pick-and-place application with a delta robot.
+This Automation Studio project accompanies the [MpPick](https://help.br-automation.com/#/en/6/motion/mapp_motion/mapp_robotics/programmierung/lib/pick/pick_.html) Getting Started section from Automation Help. The Getting Started section explains the steps for configuring a pick-and-place application using the mapp Robotics MpPick process solution. The configuration consists of one delta robot and two conveyor belts. In this application, a delta robot of the type Codian D4-ST21-1100-R11 is used and inserted via the Specific Robots Assistant.
 
 The task involves automatically picking up chaotically arranged objects from one location (e.g., a moving conveyor belt) and placing them in an orderly manner at another location (also a moving conveyor belt). The objects can vary by product type, and the requirements may include sorting by properties such as color, weight, or other characteristics.
 
 <img width="1304" height="938" alt="MpPick Scene" src="https://github.com/user-attachments/assets/e3c68013-4ba7-416c-ad8e-373bbf6bd18e" />
 
-### Application Options
+## How to run the application
 
-The pick-and-place application can be used for:
-
-- Packaging
-- Continuous sorting of objects
-- Reordering while moving
-- Handling scrap from a chaotic arrangement
-- Other similar tasks
-
-### Requirements
-
-- In simulation, Scene Viewer is recommended – the scene is either created automatically in the User partition or from projects Logical View. The required connection login is **Username: User / Password: MpPick**
-- The basics of coordinate systems are known.
-- The basics for a customized frame hierarchy are known.
-- "Getting started" tutorials are designed for simulation – describing adjustments to hardware or adapting to one's own hardware.
-- Required licenses must be available depending on hardware and software components used (see Licensing).
-- For real hardware, the transfer method must be taken into account according to the download behavior of the mapp Technology concept.
-
-### Getting Started special implementation
-
-For the most efficient and straightforward implementation of the "Getting Started" tutorial for pick-and-place, a pre-configured project is provided. This project can be started directly from Automation Studio project and started with just a few additional steps.
-
-The prepared project includes:
-
-- Imported standard Codian D4-ST21-1100-R11 template
-- Additional ACOPOS P3 for axes driving the two conveyor belts
-
-### Running and testing the application
-
-The program can be tested using the Watch window and diagnostics functions.
-
-The interface of the mapp function block in the Watch window can be used to enable commands such as switching on (Power) and homing (Home) as well as the movement (MoveXxx) or program (MoveProgram).
-
-Additional functionalities are available in section Diagnostic functions.
-
-The command starts the motion sequence of the pick-and-place system, and the ReadyXxx variables provide information about which program is working and has been prepared.
-If an error occurs, the state of variable Ready changes from TRUE to FALSE.
-For additional information, see the respective program on the function block outputs.
+0. Activate ArSim
+1. "Offline commission"
+2. Open global Watch window or Watch window for any other task
+3. Add 'CmdStart' process variable 
+4. Open the automatically generated scene from the Logical View PickAndPlace/Scene: 'ObjectHierarchy.scn'
+5. Connect SceneViewer via OPC-UA (Username: User, Password: MpPick)
+6. Set the 'CmdStart' variable to TRUE
 
 ![image](https://github.com/user-attachments/assets/18624cdf-c7f3-4b00-b2c4-23d2cc294c08)
-
-Tip: Changing the speed of the conveyor belts (PickConveyor) best shows how the PickCore solution works.
