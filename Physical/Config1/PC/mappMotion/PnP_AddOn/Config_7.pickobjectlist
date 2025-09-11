@@ -4,9 +4,6 @@
   <Element ID="gPickObjectList_1" Type="pickobjectlist">
     <Selector ID="Object[1]">
       <Property ID="Name" Value="MyProduct" />
-      <Selector ID="Load" Value="Table">
-        <Property ID="ProductLoadTable" Value="ProductLoad_1" />
-      </Selector>
     </Selector>
   </Element>
 </Configuration>

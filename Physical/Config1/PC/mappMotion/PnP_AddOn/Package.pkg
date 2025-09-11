@@ -7,7 +7,5 @@
     <Object Type="File">Config_7.pickobjectlist</Object>
     <Object Type="File">Config_8.pickregister</Object>
     <Object Type="File">Config_9.pickcore</Object>
-    <Object Type="File">ProdLoad1.dynpartable</Object>
-    <Object Type="File">ProdLoad2.dynpartable</Object>
   </Objects>
 </Package>

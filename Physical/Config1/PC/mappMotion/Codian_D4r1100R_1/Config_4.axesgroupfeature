@@ -19,9 +19,4 @@
       <Selector ID="Filter" Value="AxisJerkTime" />
     </Selector>
   </Element>
-  <Element ID="Feature_WorkspaceMon_D4r1100R_1" Type="axesgroupfeature">
-    <Selector ID="Type" Value="WorkspaceMonitoring">
-      <Property ID="WorkspaceRef" Value="Workspace_1" />
-    </Selector>
-  </Element>
 </Configuration>

@@ -6,6 +6,5 @@
     <Object Type="File">Config_2.axis</Object>
     <Object Type="File">Config_3.mechanicalsystem</Object>
     <Object Type="File">Config_4.axesgroupfeature</Object>
-    <Object Type="File" TransferedForTargetSourceCompare="true">WrkSpace.workspace</Object>
   </Objects>
 </Package>
